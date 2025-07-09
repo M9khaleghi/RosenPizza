@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronny Restaurang - Traditionell svensk mat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Ronny Restaurang Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#hem" class="nav-link">Hem</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#om-oss" class="nav-link">Om oss</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#meny" class="nav-link">Meny</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hem" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Välkommen till Ronny Restaurang</h1>
+            <p class="hero-subtitle">Upptäck traditionell svensk matlagning i en modern miljö</p>
+            <a href="#meny" class="cta-button">Se vår meny</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Om oss Section -->
+    <section id="om-oss" class="about">
+        <div class="container">
+            <h2 class="section-title">Om oss</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Ronny Restaurang har serverat traditionell svensk mat sedan 1985. Vi är stolta över att erbjuda högkvalitativ mat tillagad med lokala råvaror och gamla familjerecept.</p>
+                    <p>Vår filosofi är enkel - god mat, bra service och en varm atmosfär där alla känner sig välkomna.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>35+</h3>
+                        <p>År i branschen</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1000+</h3>
+                        <p>Nöjda kunder</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Rätter på menyn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meny Section -->
+    <section id="meny" class="menu">
+        <div class="container">
+            <h2 class="section-title">Vår meny</h2>
+            <div class="menu-categories">
+                <button class="menu-category active" data-category="klassiskapizzor">Klassiska Pizzor</button>
+                <button class="menu-category" data-category="vegetariskapizzor">Vegetariska Pizzor</button>
+                <button class="menu-category" data-category="inbakadepizzor">Inbakade Pizzor</button>
+                <button class="menu-category" data-category="mankosh">Mankosh</button>
+                <button class="menu-category" data-category="ovrig">Övrig</button>
+
+            </div>
+            
+            <div class="menu-items">
+                <!-- Förrätter -->
+                <div class="menu-section active" id="klassiskapizzor">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Margherita</h3>
+                            <p>Tomatsås, ost</p>
+                            <span class="price">69 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Vesuvio</h3>
+                            <p>Tomatsås, ost, kalkon skinka</p>
+                            <span class="price">79 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Capricciosa</h3>
+                            <p>Tomatsås, ost, kalkon skinka, champinjoner </p>
+                            <span class="price">79 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Hawaii</h3>
+                            <p>Tomatsås, ost, kalkon skinka, ananas</p>
+                            <span class="price">79 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Pescatori</h3>
+                            <p>Tomatsås, ost, tonfisk, lök</p>
+                            <span class="price">89 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Pepperoni</h3>
+                            <p>Tomatsås, ost, pepperonikorv</p>
+                            <span class="price">89 kr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Huvudrätter -->
+                <div class="menu-section" id="vegetariskapizzor">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Vegetarian</h3>
+                            <p>Tomatsås, ost, champinjoner, tomater, paprika, oliver, lök, kronärtskocka</p>
+                            <span class="price">79 kr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserter -->
+                <div class="menu-section" id="inbakadepizzor">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Calzone</h3>
+                            <p>Tomatsås, ost, kalkonskinka</p>
+                            <span class="price">89 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Calzone Special</h3>
+                            <p>Tomatsås, ost, kalkonskinka, champinjoner, svartpeppar</p>
+                            <span class="price">89 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>11</h3>
+                            <p>FRÅGA</p>
+                            <span class="price">89 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Kebabpizza</h3>
+                            <p>Tomatsås, ost, kebab, valfri sås</p>
+                            <span class="price">89 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Kycklingpizza</h3>
+                            <p>Tomatsås, ost, kyckling, valfri sås</p>
+                            <span class="price">89 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Skåne Special</h3>
+                            <p>Tomatsås, ost, hemmarinerad kebab av nötkött salt svartpeppar , valfri sås</p>
+                            <span class="price">99 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Fyra olika</h3>
+                            <p>tomatsås,ost, Vegetarisk,kebab, kyckling,margherita</p>
+                            <span class="price">99 kr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drycker -->
+                <div class="menu-section" id="mankosh">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Zaatar</h3>
+                            <p>Zaatar med ost</p>
+                            <span class="price">40 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Ost</h3>
+                            <p>Ost</p>
+                            <span class="price">35 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Kött</h3>
+                            <p>Kött</p>
+                            <span class="price">40 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Muhamara med ost</h3>
+                            <p>Muhamara med ost</p>
+                            <span class="price">40 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Muhamra</h3>
+                            <p>Muhamra</p>
+                            <span class="price">35 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>kött med ost</h3>
+                            <p>kött med ost</p>
+                            <span class="price">45 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Inbakat ost</h3>
+                            <p>Inbakat ost</p>
+                            <span class="price">50 kr</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-section" id="ovrig">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Pommes</h3>
+                            <p>Liten</p>
+                            <span class="price">30 kr</span>
+                            <p>Stor</p>
+                            <span class="price">50 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Nuggets</h3>
+                            <p>6 st</p>
+                            <span class="price">40 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Pappers</h3>
+                            <p>4 st</p>
+                            <span class="price">40 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>chilicheese</h3>
+                            <p>6 st</p>
+                            <span class="price">35 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Mozzarella sticks</h3>
+                            <p>4 st</p>
+                            <span class="price">35 kr</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Samosa</h3>
+                            <p>Potatis, lök, vitlök chiliflakes, egen special sås</p>
+                            <span class="price">20 kr</span>
+                            <p>2 st 35 kr</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Samosa chat</h3>
+                            <p>kikärter, tomatsås, lök, ingefära, vitlök, röd chilipulver, chiliflakes, spiskumminpulver, svart kardemumma, vitkål, färsk parsilja, Egen special sås</p>
+                            <span class="price">60 kr</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakta oss</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Adress</h3>
+                        <p><a href="https://maps.google.com/?q=Dicksons+väg+8,+Malmö,+Sweden" target="_blank" class="map-link">Dicksons väg 8<br>Malmö</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Telefon</h3>
+                        <p><a href="tel:0707836960" class="phone-link">070-783 69 60</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>E-post</h3>
+                        <p>info@ronnyrestaurang.se</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Öppettider</h3>
+                        <p>Måndag - Fredag: 11:00 - 22:00<br>
+                        Lördag - Söndag: 11:00 - 00:00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Ditt namn" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Din e-post" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ditt meddelande" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Skicka meddelande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ronny Restaurang</h3>
+                    <p>Traditionell svensk mat sedan 1985</p>
+                </div>
+                <div class="footer-section footer-logo-section">
+                    <img src="images/logo.png" alt="Ronny Restaurang Logo" class="footer-logo">
+                </div>
+                <div class="footer-section">
+                    <h3>Följ oss</h3>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@rosen.pizza" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/rosen_pizza1/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ronny Restaurang. Alla rättigheter förbehållna.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
